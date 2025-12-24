@@ -17,7 +17,7 @@ const RealtimeEventBoard = () => {
 
   // Setup Socket.io connection
   useEffect(() => {
-    const newSocket = io('http://localhost:3001');
+    const newSocket = io('https://event-server-production-xxxx.up.railway.app');
     setSocket(newSocket);
 
     newSocket.on('connect', () => {
