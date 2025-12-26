@@ -17,7 +17,7 @@ const RealtimeEventBoard = () => {
 
   // Setup Socket.io connection
   useEffect(() => {
-    const newSocket = io('https://event-server-production-xxxx.up.railway.app');
+    const newSocket = io('https://event-client-production.up.railway.app');
     setSocket(newSocket);
 
     newSocket.on('connect', () => {
